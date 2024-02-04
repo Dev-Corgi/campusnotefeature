@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  할일:오리엔테이션 수정하기-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- 할일: 패키지 이름에 맞게 태그 변경할것 -->
+
+        <com.notation.feature.Canvas.EditLayer
+            android:id="@+id/PaintArea"
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+        <com.notation.feature.Canvas.CompleteLayer
+            android:id="@+id/CompleteArea"
+            android:layout_width="match_parent"
+            android:layout_height="600dp" />
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id = "@+id/ControlUndo"
+            android:src="@drawable/baseline_undo_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+        <ImageView
+            android:id = "@+id/ControlRedo"
+            android:src="@drawable/baseline_redo_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+        <ImageView
+            android:id = "@+id/ControlColor"
+            android:src="@drawable/baseline_color_lens_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+        <ImageView
+            android:id = "@+id/ControlStroke"
+            android:src="@drawable/baseline_brush_24"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+        <ImageView
+            android:id = "@+id/ControlEraser"
+            android:src="@drawable/ic_eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            ></ImageView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
